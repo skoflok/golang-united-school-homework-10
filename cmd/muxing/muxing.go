@@ -46,7 +46,7 @@ func postData(w http.ResponseWriter, r *http.Request) {
 	if data, err := io.ReadAll(r.Body); err != nil {
 		w.WriteHeader(http.StatusOK)
 	} else {
-		fmt.Fprintf(w, string(data))
+		fmt.Fprintf(w, "I got message:\n"+string(data))
 	}
 }
 
