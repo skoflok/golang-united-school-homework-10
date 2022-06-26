@@ -65,7 +65,7 @@ func postHeaders(w http.ResponseWriter, r *http.Request) {
 
 func getName(w http.ResponseWriter, r *http.Request) {
 	param := mux.Vars(r)["param"]
-	fmt.Fprintf(w, "Hello, "+param+"!\n")
+	fmt.Fprintf(w, "Hello, "+param+"!")
 }
 
 func getBad(w http.ResponseWriter, r *http.Request) {
